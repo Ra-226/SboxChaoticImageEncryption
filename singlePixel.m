@@ -1,0 +1,9 @@
+clc;
+clear;
+I=imread('lena512.bmp'); 
+[m,n]=size(I);
+%disp(I(56,65));
+I(36,67)=mod(I(33,67)+1,256);
+%disp(I(56,65));
+imwrite(I,'2lena512.bmp');  
+figure;imshow(I);title('º”√‹∫ÛÕº∆¨');
